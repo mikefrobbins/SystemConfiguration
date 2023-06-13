@@ -142,8 +142,8 @@ images:
 cd ~
 mkdir Developer
 cd Developer
-mkkdir git
-mkkdir images
+mkdir git
+mkdir images
 ```
 
 ### Screenshot tool
@@ -171,8 +171,9 @@ Favorites
 - Add Developer folder
 - Add Library folder
 
-Drag the Developer folder to the left side of the dock. Click **Go** while holding down the
-**Option** key and select Library. Drag the Library folder to the left side of the dock.
+Drag the Developer folder to Favorites on the left side of the dock. Click **Go** while holding down
+the **Option** key and select Library. Drag the Library folder to Favorites on the left side of the
+dock.
 
 ## Apps to install
 
