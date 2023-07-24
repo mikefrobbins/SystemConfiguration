@@ -1,14 +1,22 @@
-﻿Set-Location -Path $env:SystemDrive\
+﻿if ($PSVersionTable.PSVersion -lt 6.0.0) {
+    $IsWindows = $true
+    $IsLinux = $false
+    $IsMacOS = $false
+    $IsCoreCLR = $false
+}
+
+if ($IsWindows) {
+    Set-Location -Path $env:SystemDrive\
+}
+
 Clear-Host
 
 $Error.Clear()
 
-$poshGitModule = Get-Module posh-git -ListAvailable |
-                 Sort-Object -Property Version -Descending |
-                 Select-Object -First 1
+$poshGitModule = Get-Module posh-git -ListAvailable
 
 if ($poshGitModule) {
-    $poshGitModule | Import-Module
+    Import-Module -Name posh-git
 
     function prompt {
 
@@ -52,6 +60,7 @@ Set-PSReadLineKeyHandler -Chord Enter -Function ValidateAndAcceptLine
 Set-PSReadLineKeyHandler -Chord Escape -Function BackwardKillInput
 Set-PSReadLineKeyHandler -Chord Ctrl+RightArrow -Function ForwardWord
 Set-PSReadLineKeyHandler -Chord Ctrl+LeftArrow -Function BackwardWord
+Set-PSReadLineKeyHandler -Chord Ctrl+D2 -Function MenuComplete
 
 $StartupVars = @()
 $StartupVars = Get-Variable | Select-Object -ExpandProperty Name
