@@ -1,4 +1,11 @@
-﻿if (-not($IsLinux) -and -not($IsMacOS)) {
+﻿if ($PSVersionTable.PSVersion -lt 6.0.0) {
+    $IsWindows = $true
+    $IsLinux = $false
+    $IsMacOS = $false
+    $IsCoreCLR = $false
+}
+
+if ($IsWindows) {
     Set-Location -Path $env:SystemDrive\
 }
 
@@ -53,6 +60,7 @@ Set-PSReadLineKeyHandler -Chord Enter -Function ValidateAndAcceptLine
 Set-PSReadLineKeyHandler -Chord Escape -Function BackwardKillInput
 Set-PSReadLineKeyHandler -Chord Ctrl+RightArrow -Function ForwardWord
 Set-PSReadLineKeyHandler -Chord Ctrl+LeftArrow -Function BackwardWord
+Set-PSReadLineKeyHandler -Chord Ctrl+D2 -Function MenuComplete
 
 $StartupVars = @()
 $StartupVars = Get-Variable | Select-Object -ExpandProperty Name
