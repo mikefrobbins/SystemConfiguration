@@ -1,14 +1,15 @@
-﻿Set-Location -Path $env:SystemDrive\
+﻿if (-not($IsLinux) -and -not($IsMacOS)) {
+    Set-Location -Path $env:SystemDrive\
+}
+
 Clear-Host
 
 $Error.Clear()
 
-$poshGitModule = Get-Module posh-git -ListAvailable |
-                 Sort-Object -Property Version -Descending |
-                 Select-Object -First 1
+$poshGitModule = Get-Module posh-git -ListAvailable
 
 if ($poshGitModule) {
-    $poshGitModule | Import-Module
+    Import-Module -Name posh-git
 
     function prompt {
 
