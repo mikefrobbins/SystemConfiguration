@@ -131,6 +131,7 @@ application and run the following commands:
 git config --global user.name "Firstname Lastname"
 git config --global user.email "githubusername@users.noreply.github.com"
 git config --global credential.helper store
+git config --global init.defaultBranch main
 ```
 
 ### File system
