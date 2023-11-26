@@ -182,199 +182,199 @@ Install the following:
 
 - [Homebrew](https://brew.sh/)
 
-```zsh
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
+  ```zsh
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  ```
 
-Add brew to Path:
+  Add brew to Path:
 
-```zsh
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/mikefrobbins/.zprofile
-eval "$(/opt/homebrew/bin/brew shellenv)"
-```
+  ```zsh
+  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/mikefrobbins/.zprofile
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+  ```
 
-Disable brew analytics:
+  Disable brew analytics:
 
-```zsh
-brew analytics off
-```
+  ```zsh
+  brew analytics off
+  ```
+
+  Update apps installed with brew. Periodically run this command to keep your apps up to date.
+
+  ```zsh
+  brew update && brew upgrade && brew cleanup
+  ```
 
 - Alt Tab
 
-```zsh
-brew install --cask alt-tab
-```
+  ```zsh
+  brew install --cask alt-tab
+  ```
 
 - Azure CLI
 
-```zsh
-brew install azure-cli
-```
+  ```zsh
+  brew install azure-cli
+  ```
 
 - Beyond Compare
 
-```zsh
-brew install --cask beyond-compare
-```
+  ```zsh
+  brew install --cask beyond-compare
+  ```
 
 - Docker
 
-```zsh
-brew install docker
-```
+  ```zsh
+  brew install docker
+  ```
 
 - Firefox
 
-```zsh
-brew install --cask firefox
-```
+  ```zsh
+  brew install --cask firefox
+  ```
 
 - Gimp
 
-```zsh
-brew install --cask gimp
-```
+  ```zsh
+  brew install --cask gimp
+  ```
 
 - Git
 
-```zsh
-brew install  git
-```
+  ```zsh
+  brew install  git
+  ```
 
 - GitHub CLI
 
-```zsh
-brew install gh
-```
+  ```zsh
+  brew install gh
+  ```
 
 - Go
 
-```zsh
-brew install go
-```
+  ```zsh
+  brew install go
+  ```
 
 - Google Chrome
 
-```zsh
-brew install --cask google-chrome
-```
+  ```zsh
+  brew install --cask google-chrome
+  ```
 
 - Hugo
 
-```zsh
-brew install hugo
-```
+  ```zsh
+  brew install hugo
+  ```
 
 - iTerm2
 
-```zsh
-brew install --cask iterm2
-```
+  ```zsh
+  brew install --cask iterm2
+  ```
 
 - JC (JSON CLI output utility)
 
-```zsh
-brew install jc
-```
+  ```zsh
+  brew install jc
+  ```
 
 - JQ (JSON CLI processor)
 
-```zsh
-brew install jq
-```
+  ```zsh
+  brew install jq
+  ```
 
 - Microsoft Office
 
-```zsh
-brew install --cask microsoft-office
-```
+  ```zsh
+  brew install --cask microsoft-office
+  ```
 
 - NCurses Disk Utility
 
-```zsh
-brew install ncdu
-```
+  ```zsh
+  brew install ncdu
+  ```
 
 - OBS Studio
 
-```zsh
-brew install --cask obs
-```
+  ```zsh
+  brew install --cask obs
+  ```
 
 - Obsidian
 
-```zsh
-brew install --cask obsidian
-```
+  ```zsh
+  brew install --cask obsidian
+  ```
 
 - PowerShell
 
-```zsh
-brew install --cask powershell
-```
+  ```zsh
+  brew install --cask powershell
+  ```
 
-To use brew in PowerShell:
+  To use brew in PowerShell:
 
-```powershell
-Add-Content -Path $PROFILE.CurrentUserAllHosts -Value '$(/opt/homebrew/bin/brew shellenv) | Invoke-Expression'
-```
+  ```powershell
+  Add-Content -Path $PROFILE.CurrentUserAllHosts -Value '$(/opt/homebrew/bin/brew shellenv) | Invoke-Expression'
+  ```
 
 - Rectangle
 
-```zsh
-brew install --cask rectangle
-```
+  ```zsh
+  brew install --cask rectangle
+  ```
 
 - Skopeo
 
-```zsh
-brew install skopeo
-```
+  ```zsh
+  brew install skopeo
+  ```
 
 - Slack
 
-```zsh
-brew install --cask slack
-```
+  ```zsh
+  brew install --cask slack
+  ```
 
 - TG Pro
 
-```zsh
-brew install --cask tg-pro
-```
+  ```zsh
+  brew install --cask tg-pro
+  ```
 
 - Tree command
 
-```zsh
-brew install tree
-```
+  ```zsh
+  brew install tree
+  ```
 
 - Vale
 
-```zsh
-brew install vale
-```
+  ```zsh
+  brew install vale
+  ```
 
 - VNC Viewer
 
-```zsh
-brew install --cask vnc-viewer
-```
+  ```zsh
+  brew install --cask vnc-viewer
+  ```
 
 - VS Code
 
-```zsh
-brew install --cask visual-studio-code
-```
+  ```zsh
+  brew install --cask visual-studio-code
+  ```
 
 - Wget
 
-```zsh
-brew install wget
-```
-
-- Update apps installed via brew
-
-```zsh
-brew update && brew upgrade && brew cleanup
-```
+  ```zsh
+  brew install wget
+  ```
