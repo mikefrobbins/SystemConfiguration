@@ -32,7 +32,7 @@ Tweak the scroll bars for enhanced usability:
 
   - Always show scroll bars
 
-    _System settings > General > Show scroll bars > Always_
+    _System settings > Appearance > Show scroll bars > Always_
 
   - Jump to the spot that's clicked in scroll bars
 
@@ -44,8 +44,8 @@ Simplify moving windows around with the trackpad by enabling three finger drag:
 
 - Three finger drag
 
-  _System settings > Accessibility > Pointer Control > Trackpad Options > Enable dragging > Three
-  finger drag_
+  _System settings > Accessibility > Pointer Control > Trackpad Options > Enable: "Use trackpad for
+  dragging" > Dragging style: "Three finger drag"_
 
 ### Control Center
 
@@ -67,7 +67,7 @@ the dock:
   - Size: ~30% (depending on screen size and resolution)
   - Magnification: ~40% to 50% (depending on screen size and resolution)
   - Minimize windows into application icon: On
-  - Show recent applications in Dock: Off
+  - Show suggested and recent apps in Dock: Off
   - Default web browser: (your web browser of choice)
   - Automatically rearrange Spaces based on most recent use: Off
   - Hot Corners: Bottom right: Desktop
@@ -100,7 +100,7 @@ _System settings > Touch ID &  Password > Apple Watch_
 
 _System settings > Keyboard_
 
-- Press fn key to: Show Emoji & Symbols
+- Press fn key to: Do Nothing
 - Keyboard navigation: On
 
 ### Mouse
@@ -140,7 +140,7 @@ Make a directory named Developer in your home directory and create two subdirect
 images:
 
 ```zsh
-cd ~
+cd
 mkdir Developer
 cd Developer
 mkdir git
@@ -189,8 +189,122 @@ Install the following:
 Add brew to Path:
 
 ```zsh
-(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/mikefrobbins/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/mikefrobbins/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
+```
+
+Disable brew analytics:
+
+```zsh
+brew analytics off
+```
+
+- Alt Tab
+
+```zsh
+brew install --cask alt-tab
+```
+
+- Azure CLI
+
+```zsh
+brew install azure-cli
+```
+
+- Beyond Compare
+
+```zsh
+brew install --cask beyond-compare
+```
+
+- Docker
+
+```zsh
+brew install docker
+```
+
+- Firefox
+
+```zsh
+brew install --cask firefox
+```
+
+- Gimp
+
+```zsh
+brew install --cask gimp
+```
+
+- Git
+
+```zsh
+brew install  git
+```
+
+- GitHub CLI
+
+```zsh
+brew install gh
+```
+
+- Go
+
+```zsh
+brew install go
+```
+
+- Google Chrome
+
+```zsh
+brew install --cask google-chrome
+```
+
+- Hugo
+
+```zsh
+brew install hugo
+```
+
+- iTerm2
+
+```zsh
+brew install --cask iterm2
+```
+
+- JC (JSON CLI output utility)
+
+```zsh
+brew install jc
+```
+
+- JQ (JSON CLI processor)
+
+```zsh
+brew install jq
+```
+
+- Microsoft Office
+
+```zsh
+brew install --cask microsoft-office
+```
+
+- NCurses Disk Utility
+
+```zsh
+brew install ncdu
+```
+
+- OBS Studio
+
+```zsh
+brew install --cask obs
+```
+
+- Obsidian
+
+```zsh
+brew install --cask obsidian
 ```
 
 - PowerShell
@@ -205,34 +319,22 @@ To use brew in PowerShell:
 Add-Content -Path $PROFILE.CurrentUserAllHosts -Value '$(/opt/homebrew/bin/brew shellenv) | Invoke-Expression'
 ```
 
-- VS Code
-
-```zsh
-brew install --cask visual-studio-code
-```
-
-- iTerm2
-
-```zsh
-brew install --cask iterm2
-```
-
 - Rectangle
 
 ```zsh
 brew install --cask rectangle
 ```
 
-- Firefox
+- Skopeo
 
 ```zsh
-brew install --cask firefox
+brew install skopeo
 ```
 
-- Microsoft Office
+- Slack
 
 ```zsh
-brew install --cask microsoft-office
+brew install --cask slack
 ```
 
 - TG Pro
@@ -241,26 +343,38 @@ brew install --cask microsoft-office
 brew install --cask tg-pro
 ```
 
-- Alt Tab
+- Tree command
 
 ```zsh
-brew install --cask alt-tab
+brew install tree
 ```
 
-- Beyond Compare
+- Vale
 
 ```zsh
-brew install --cask beyond-compare
+brew install vale
 ```
 
-- Obsidian
+- VNC Viewer
 
 ```zsh
-brew install --cask obsidian
+brew install --cask vnc-viewer
 ```
 
-- Google Chrome
+- VS Code
 
 ```zsh
-brew install --cask google-chrome
+brew install --cask visual-studio-code
+```
+
+- Wget
+
+```zsh
+brew install wget
+```
+
+- Update apps installed via brew
+
+```zsh
+brew update && brew upgrade && brew cleanup
 ```
