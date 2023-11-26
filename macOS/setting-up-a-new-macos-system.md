@@ -205,7 +205,7 @@ Install the following:
   brew update && brew upgrade && brew cleanup
   ```
 
-- [Alt Tab](https://alt-tab-macos.netlify.app/)
+- [Alt Tab](https://alt-tab-macos.netlify.app/) (Windows style alt tab)
 
   ```zsh
   brew install --cask alt-tab
@@ -217,7 +217,7 @@ Install the following:
   brew install azure-cli
   ```
 
-- [Beyond Compare](https://www.scootersoftware.com/)
+- [Beyond Compare](https://www.scootersoftware.com/) (File comparison utility)
 
   ```zsh
   brew install --cask beyond-compare
@@ -259,13 +259,19 @@ Install the following:
   brew install --cask google-chrome
   ```
 
-- [Hugo](https://gohugo.io/)
+- [Go](https://go.dev/) (Golang)
+
+```zsh
+brew install go
+```
+
+- [Hugo](https://gohugo.io/) (Static site generator)
 
   ```zsh
   brew install hugo
   ```
 
-- [iTerm2](https://iterm2.com/)
+- [iTerm2](https://iterm2.com/) (Terminal emulator)
 
   ```zsh
   brew install --cask iterm2
@@ -283,19 +289,19 @@ Install the following:
   brew install jq
   ```
 
-- [Microsoft 365](https://www.microsoft.com/microsoft-365/microsoft-office) (Microsoft Office)
+- [Microsoft 365](https://www.microsoft.com/microsoft-365/mac/microsoft-365-for-mac/) (Office 365)
 
   ```zsh
   brew install --cask microsoft-office
   ```
 
-- [NCurses Disk Usage Analyzer](https://dev.yorhel.nl/ncdu)
+- [NCurses Disk Utility](https://dev.yorhel.nl/ncdu) (Disk usage analyzer)
 
   ```zsh
   brew install ncdu
   ```
 
-- [Obsidian](https://obsidian.md/)
+- [Obsidian](https://obsidian.md/) (Markdown note taking app)
 
   ```zsh
   brew install --cask obsidian
@@ -313,13 +319,13 @@ Install the following:
   Add-Content -Path $PROFILE.CurrentUserAllHosts -Value '$(/opt/homebrew/bin/brew shellenv) | Invoke-Expression'
   ```
 
-- [Rectangle](https://rectangleapp.com/)
+- [Rectangle](https://rectangleapp.com/) (Window manager)
 
   ```zsh
   brew install --cask rectangle
   ```
 
-- [Skopeo](https://github.com/containers/skopeo)
+- [Skopeo](https://github.com/containers/skopeo) (Container image management utility)
 
   ```zsh
   brew install skopeo
@@ -331,25 +337,25 @@ Install the following:
   brew install --cask slack
   ```
 
-- [TG Pro](https://www.tunabellysoftware.com/tgpro/)
+- [TG Pro](https://www.tunabellysoftware.com/tgpro/) (Temperature monitoring utility)
 
   ```zsh
   brew install --cask tg-pro
   ```
 
-- Tree command
+- [Tree](https://gitlab.com/OldManProgrammer/unix-tree) (Directory listing utility)
 
   ```zsh
   brew install tree
   ```
 
-- [Vale](https://vale.sh/)
+- [Vale](https://vale.sh/) (Markdown linter)
 
   ```zsh
   brew install vale
   ```
 
-- [VNC Viewer](https://www.realvnc.com/connect/download/viewer/)
+- [VNC Viewer](https://www.realvnc.com/connect/download/viewer/) (Remote desktop viewer)
 
   ```zsh
   brew install --cask vnc-viewer
@@ -361,7 +367,7 @@ Install the following:
   brew install --cask visual-studio-code
   ```
 
-- Wget
+- [Wget](https://en.wikipedia.org/wiki/Wget) (File downloader)
 
   ```zsh
   brew install wget
