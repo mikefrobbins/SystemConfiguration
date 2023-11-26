@@ -261,9 +261,9 @@ Install the following:
 
 - [Go](https://go.dev/) (Golang)
 
-```zsh
-brew install go
-```
+  ```zsh
+  brew install go
+  ```
 
 - [Hugo](https://gohugo.io/) (Static site generator)
 
