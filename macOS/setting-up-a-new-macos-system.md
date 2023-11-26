@@ -205,145 +205,133 @@ Install the following:
   brew update && brew upgrade && brew cleanup
   ```
 
-- Alt Tab
+- [Alt Tab](https://alt-tab-macos.netlify.app/)
 
   ```zsh
   brew install --cask alt-tab
   ```
 
-- Azure CLI
+- [Azure CLI](https://learn.microsoft.com/cli/azure/)
 
   ```zsh
   brew install azure-cli
   ```
 
-- Beyond Compare
+- [Beyond Compare](https://www.scootersoftware.com/)
 
   ```zsh
   brew install --cask beyond-compare
   ```
 
-- Docker
+- [Docker](https://www.docker.com/)
 
   ```zsh
   brew install docker
   ```
 
-- Firefox
+- [Firefox](https://www.mozilla.org/firefox/new/)
 
   ```zsh
   brew install --cask firefox
   ```
 
-- Gimp
+- [Gimp](https://www.gimp.org/)
 
   ```zsh
   brew install --cask gimp
   ```
 
-- Git
+- [Git](https://git-scm.com/)
 
   ```zsh
   brew install  git
   ```
 
-- GitHub CLI
+- [GitHub CLI](https://cli.github.com/)
 
   ```zsh
   brew install gh
   ```
 
-- Go
-
-  ```zsh
-  brew install go
-  ```
-
-- Google Chrome
+- [Google Chrome](https://www.google.com/chrome/)
 
   ```zsh
   brew install --cask google-chrome
   ```
 
-- Hugo
+- [Hugo](https://gohugo.io/)
 
   ```zsh
   brew install hugo
   ```
 
-- iTerm2
+- [iTerm2](https://iterm2.com/)
 
   ```zsh
   brew install --cask iterm2
   ```
 
-- JC (JSON CLI output utility)
+- [JC](https://github.com/kellyjonbrazil/jc) (JSON CLI output utility)
 
   ```zsh
   brew install jc
   ```
 
-- JQ (JSON CLI processor)
+- [JQ](https://github.com/jqlang/jq) (JSON CLI processor)
 
   ```zsh
   brew install jq
   ```
 
-- Microsoft Office
+- [Microsoft 365](https://www.microsoft.com/microsoft-365/microsoft-office) (Microsoft Office)
 
   ```zsh
   brew install --cask microsoft-office
   ```
 
-- NCurses Disk Utility
+- [NCurses Disk Usage Analyzer](https://dev.yorhel.nl/ncdu)
 
   ```zsh
   brew install ncdu
   ```
 
-- OBS Studio
-
-  ```zsh
-  brew install --cask obs
-  ```
-
-- Obsidian
+- [Obsidian](https://obsidian.md/)
 
   ```zsh
   brew install --cask obsidian
   ```
 
-- PowerShell
+- [PowerShell](https://learn.microsoft.com/powershell/)
 
   ```zsh
   brew install --cask powershell
   ```
 
-  To use brew in PowerShell:
+  Use brew in PowerShell:
 
   ```powershell
   Add-Content -Path $PROFILE.CurrentUserAllHosts -Value '$(/opt/homebrew/bin/brew shellenv) | Invoke-Expression'
   ```
 
-- Rectangle
+- [Rectangle](https://rectangleapp.com/)
 
   ```zsh
   brew install --cask rectangle
   ```
 
-- Skopeo
+- [Skopeo](https://github.com/containers/skopeo)
 
   ```zsh
   brew install skopeo
   ```
 
-- Slack
+- [Slack](https://slack.com/)
 
   ```zsh
   brew install --cask slack
   ```
 
-- TG Pro
+- [TG Pro](https://www.tunabellysoftware.com/tgpro/)
 
   ```zsh
   brew install --cask tg-pro
@@ -355,19 +343,19 @@ Install the following:
   brew install tree
   ```
 
-- Vale
+- [Vale](https://vale.sh/)
 
   ```zsh
   brew install vale
   ```
 
-- VNC Viewer
+- [VNC Viewer](https://www.realvnc.com/connect/download/viewer/)
 
   ```zsh
   brew install --cask vnc-viewer
   ```
 
-- VS Code
+- [VS Code](https://code.visualstudio.com/)
 
   ```zsh
   brew install --cask visual-studio-code
