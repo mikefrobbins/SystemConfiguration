@@ -50,6 +50,7 @@ $PSDefaultParameterValues += @{
     'Group-Object:NoElement' = $true
     'Find-Module:Repository' = 'PSGallery'
     'Install-Module:Repository' = 'PSGallery'
+    'Install-Module:Scope' = 'AllUsers'
 }
 
 Set-PSReadLineOption -PredictionSource HistoryAndPlugin
