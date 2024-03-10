@@ -1,4 +1,4 @@
-﻿if ($PSVersionTable.PSVersion -lt 6.0.0) {
+﻿if ($PSVersionTable.PSVersion.Major -le 5) {
     $IsWindows = $true
     $IsLinux = $false
     $IsMacOS = $false
